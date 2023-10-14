@@ -1,0 +1,94 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --primary-glow: conic-gradient(
+    from 180deg at 50% 50%,
+    #16abff33 0deg,
+    #0885ff33 55deg,
+    #54d6ff33 120deg,
+    #0071ff33 160deg,
+    transparent 360deg
+  );
+  --secondary-glow: radial-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+
+  --tile-start-rgb: 239, 245, 249;
+  --tile-end-rgb: 228, 232, 233;
+  --tile-border: conic-gradient(
+    #00000080,
+    #00000040,
+    #00000030,
+    #00000020,
+    #00000010,
+    #00000010,
+    #00000080
+  );
+
+  --callout-rgb: 238, 240, 241;
+  --callout-border-rgb: 172, 175, 176;
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
+}
+
+/* *************FONTS************ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* *************FONTS************ */
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-shadow{
+box-shadow: 0 2px 10px -3px rgb(70 85 225);
+}
+p{
+  text-align: justify;
+  font-size: 25px;
+}
+.blog-title-main{
+  color: #203656;
+  cursor: pointer;
+  
+}
+.blog-title-main h2:hover{
+  color: #0b006d;
+}
+.blog-card-main{
+  box-shadow: 0 14px 28px rgba(142, 142, 142, 0.25), 0 10px 20px rgba(70, 70, 70, 0.22);
+}
+.blog-read-more{
+  color: #203656;
+  font-weight: 600;
+}
+.blog-read-more:hover .read-more-arrow{
+ transform: translateX(10px);
+}
+
+@media (max-width:978px) {
+  .blog-card-wrapper{
+    width: 90%;
+  }
+  .blog-main-image{
+    height: 200px;
+  }
+}
+@media (max-width:675px) {
+
+  .blog-main-image{
+    height: 250px;
+  }
+}
